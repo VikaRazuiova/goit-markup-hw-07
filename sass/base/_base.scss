@@ -4,7 +4,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     color: $primary-text-color;
-    background-color: $primari-background-color;
+    background-color: $primari-background-color;   
 }
 
 h1,
@@ -23,14 +23,16 @@ img {
     display: block;
 }
 
+input {
+    outline: none;
+}
+
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
 }
-
-
 
 .section {
     padding-top: 94px;

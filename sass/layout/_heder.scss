@@ -9,14 +9,9 @@
     align-items: center;
 }
 
-
-
-/*navigation*/
-
 .site-nav {
     display: flex;
     margin-left: 93px;
-
 }
 
 .site-nav .item {
@@ -60,6 +55,8 @@
 .site-nav :focus {
     color: $accent-color;
 }
+
+
 
 .contacts {
     display: flex;
