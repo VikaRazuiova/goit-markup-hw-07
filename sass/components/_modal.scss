@@ -2,7 +2,7 @@
     min-width: 528px;
     min-height: 581px;
     padding: 40px;
-    background-color: var(--white-color);
+    background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: absolute;
@@ -30,7 +30,7 @@
 
 .button-modal-close:hover .modal-close,
 .button-modal-close:focus .modal-close {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 
@@ -67,11 +67,11 @@
 }
 
 .modal-input:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
 }
 
 .modal-input:focus+.imput-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .modal-label {
@@ -81,7 +81,7 @@
     margin-bottom: 4px;
     letter-spacing: 0.01em;
     line-height: 1.16;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 
 }
 
@@ -119,7 +119,7 @@
 }
 
 .online-comment:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
 }
 
 .check-text {
@@ -161,20 +161,20 @@
 }
 
 .modal-check:checked+.check-text span {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    fill: var(--white-color);
+    background-color: $accent-color;
+    border-color: $accent-color;
+    fill: $white-color;
 }
 
 .modal-check:checked+.check-text span .input-icon {
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .modal-button {
     width: 200px;
     height: 50px;
-    color: var(--white-color);
-    background-color: var(--accent-color);
+    color: $white-color;
+    background-color: $accent-color;
 
     font-size: 16px;
     font-weight: 700;
@@ -195,5 +195,5 @@
 }
 
 .modal-terms {
-    color: var(--accent-color);
+    color: $accent-color;
 }

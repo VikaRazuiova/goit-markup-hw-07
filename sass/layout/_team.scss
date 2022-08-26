@@ -1,6 +1,6 @@
 .team {
     display: flex;
-    background-color: var(--secondary-background-color);
+    background-color: $secondary-background-color;
     line-height: 1.18;
 }
 
@@ -12,7 +12,7 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     ;
-    background-color: var(--white-color);
+    background-color: $white-color;
 }
 
 .team .item:last-child {
@@ -43,5 +43,5 @@
     text-align: center;
     font-weight: 400;
     font-size: 16px;
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
 }

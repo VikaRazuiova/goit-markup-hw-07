@@ -1,5 +1,5 @@
 .hero {
-    background-color: var(--dark-color);
+    background-color: $dark-color;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-img.jpeg);
@@ -15,7 +15,7 @@
     margin-bottom: 30px;
     max-width: 696px;
 
-    color: var(--white-color);
+    color: $white-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -36,8 +36,8 @@
     border-radius: 4px;
     width: 216px;
 
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    background-color: $accent-color;
+    color: $white-color;
     font-weight: inherit;
     font-size: 16px;
     line-height: 1.88;

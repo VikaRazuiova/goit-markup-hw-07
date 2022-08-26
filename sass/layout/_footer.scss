@@ -1,5 +1,5 @@
 .page-footer {
-    background-color: var(--dark-color);
+    background-color: $dark-color;
     font-weight: 400;
     line-height: 1.7;
 
@@ -30,16 +30,16 @@
 
 .address-link:hover,
 .address-link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .address-footer:hover,
 .address-footer:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .address-footer {
-    color: var(--white-color);
+    color: $white-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -51,7 +51,7 @@
 
 .social-contact-title {
     margin-bottom: 20px;
-    color: var(--white-color);
+    color: $white-color;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -83,12 +83,12 @@
 }
 
 .social-contact-icon {
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .social-contact-link:hover,
 .social-contact-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 }
 
 
@@ -103,7 +103,7 @@
 
 .subscription-title {
     margin-bottom: 20px;
-    color: var(--white-color);
+    color: $white-color;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -123,7 +123,7 @@
     border-radius: 4px;
     background-color: transparent;
     padding: 0;
-    color: var(--white-color);
+    color: $white-color;
     font-size: 16px;
     cursor: pointer;
     transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -139,7 +139,7 @@
 }
 
 .footer-input:focus {
-    outline-color: var(--accent-color);
+    outline-color: $accent-color;
 }
 
 
@@ -154,8 +154,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-color: transparent;
-    background-color: var(--accent-color);
-    color: var(--white-color);
+    background-color: $accent-color;
+    color: $white-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -164,5 +164,5 @@
 
 .icon-send {
     margin-left: 10px;
-    fill: var(--white-color);
+    fill: $white-color;
 }
