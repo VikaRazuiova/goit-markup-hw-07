@@ -23,37 +23,40 @@
     <!--ХЕДЕР-->
     <header class="page-header">
       <div class="container nav-heder">
-        <a href="./index.html" class="logo list">
-          <span class="logo-blue">Web</span
-          ><span class="logo-black">Studio</span></a
+        <a href="./index.html" class="logo list"
+          >Web<span class="logo-black">Studio</span></a
         >
 
         <!--НАВІГАЦІЯ-->
         <nav>
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="list">Студія</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link list">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="list current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link list current"
+                >Портфоліо</a
+              >
             </li>
-            <li class="item"><a href="" class="list">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link list">Контакти</a>
+            </li>
           </ul>
         </nav>
 
         <!--КОНТАКТИ-->
         <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="list contact-link"
-              ><svg class="contact-icon" width="16px" height="12px">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link list"
+              ><svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="list contact-link"
-              ><svg class="contact-icon" width="10px" height="16px">
+            <a href="tel:+380961111111" class="contacts__link list"
+              ><svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -67,7 +70,7 @@
       <section class="section container portfolio">
         <h1 class="visually-hidden">Портфоліо</h1>
         <!--ФІЛЬТР-->
-        <ul class="portfolio-filter portfolio list">
+        <ul class="portfolio-filter list">
           <li class="portfolio-filter__item">
             <button class="portfolio-filter__button" type="button">Все</button>
           </li>
@@ -94,193 +97,207 @@
         </ul>
 
         <!--ПРИКЛАДИ ПРОЄКТІВ-->
-        <ul class="projects list">
-          <li class="item">
-            <a href="#" class="list projects-link">
-              <div class="project-img">
+        <ul class="portfolio-list list">
+          <li class="portfolio-list__item">
+            <a href="#" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example1.jpg"
                   alt="--Приклад веб-сайту"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Технокряк</h2>
-                <p class="projects-text">Веб-сайт</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Технокряк</h2>
+                <p class="portfolio-list__card-text">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example2.jpg"
                   alt="--Приклад дизайн прєкта"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Постер New Orlean vs Golden Star</h2>
-                <p class="projects-text">Дизайн</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio-list__card-text">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example3.jpg"
                   alt="--Приклад додатку для ресторану"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Ресторан Seafood</h2>
-                <p class="projects-text">Додаток</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Ресторан Seafood</h2>
+                <p class="portfolio-list__card-text">Додаток</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example4.jpg"
                   alt="Приклад маркетингового проєкту Prime "
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Проєкт Prime</h2>
-                <p class="projects-text">Маркетинг</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Проєкт Prime</h2>
+                <p class="portfolio-list__card-text">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example5.jpg"
                   alt="Приклад додатку Boxes"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Проєкт Boxes</h2>
-                <p class="projects-text">Додаток</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Проєкт Boxes</h2>
+                <p class="portfolio-list__card-text">Додаток</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example6.jpg"
                   alt="Приклад веб-сайту"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Inspiration has no Borders</h2>
-                <p class="projects-text">Веб-сайт</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">
+                  Inspiration has no Borders
+                </h2>
+                <p class="portfolio-list__card-text">Веб-сайт</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example7.jpg"
                   alt="Приклад дизайн проєкту Limited Edition"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Видання Limited Edition</h2>
-                <p class="projects-text">Дизайн</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">
+                  Видання Limited Edition
+                </h2>
+                <p class="portfolio-list__card-text">Дизайн</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example8.jpg"
                   alt="Приклад маркетингового прєкту LAB"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Проект LAB</h2>
-                <p class="projects-text">Маркетинг</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Проект LAB</h2>
+                <p class="portfolio-list__card-text">Маркетинг</p>
               </div>
             </a>
           </li>
-          <li class="item">
-            <a href="" class="list projects-link">
-              <div class="project-img">
+
+          <li class="portfolio-list__item">
+            <a href="" class="portfolio-list__link list">
+              <div class="portfolio-list__img">
                 <img
                   src="./images/example9.jpg"
                   alt="Приклад додатку Growing Business"
                   width="370"
                   height="294"
                 />
-                <p class="project-img-text">
+                <p class="portfolio-list__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <div class="projects-card">
-                <h2 class="projects-title">Growing Business</h2>
-                <p class="projects-text">Додаток</p>
+              <div class="portfolio-list__card">
+                <h2 class="portfolio-list__card-title">Growing Business</h2>
+                <p class="portfolio-list__card-text">Додаток</p>
               </div>
             </a>
           </li>
