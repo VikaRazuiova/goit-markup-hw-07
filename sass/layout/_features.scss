@@ -17,12 +17,11 @@
     margin: 25px 100px;
 }
 
-.features .item:last-child {
+.features__item:last-child {
     margin-right: 0;
 }
 
 .features-text {
-
     font-weight: 400;
     line-height: 1.7;
     color: $secondary-text-color;
