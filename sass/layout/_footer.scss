@@ -1,4 +1,5 @@
-.page-footer {
+
+.footer {
     background-color: $dark-color;
     font-weight: 400;
     line-height: 1.7;
@@ -7,11 +8,17 @@
     padding-bottom: 60px;
 }
 
-.page-footer .container {
+.footer .container {
     display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.page-address {
+
+
+
+.address-box {
+    width: 231px;
     margin: 20px 0 0 0;
     padding: 0;
 
@@ -20,103 +27,76 @@
     text-decoration: none;
 }
 
-.page-address .item {
+.address-box__item {
     padding-bottom: 9px;
+
+    &:last-child {
+        padding-bottom: 0px;
+        }
 }
 
-.page-address .item:last-child {
-    padding-bottom: 0px;
-}
-
-.address-link:hover,
-.address-link:focus {
-    color: $accent-color;
-}
-
-.address-footer:hover,
-.address-footer:focus {
-    color: $accent-color;
-}
-
-.address-footer {
+.address__location {
     color: $white-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        }
 }
 
-.address-link {
+.address__link {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        }
 }
 
 
-.social-contact-title {
-    margin-bottom: 20px;
-    color: $white-color;
-    font-size: 14px;
-    line-height: 1.14;
-}
 
-.container-social-list {
+
+.join {
     width: 206px;
     display: flex;
     flex-wrap: wrap;
-    align-self: baseline;
-    margin-left: 70px;
-    padding-top: 12px;
+    &__title {
+        margin-bottom: 20px;
+        color: $white-color;
+        font-size: 14px;
+        line-height: 1.14;
+        }
 }
-
-.social-contact-link {
+.social__link{
     background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.join .social__icon {
+    fill: $white-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-contact-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.social-contact-icon {
-    fill: $white-color;
-}
-
-.social-contact-link:hover,
-.social-contact-link:focus {
-    background-color: $accent-color;
-}
 
 
-.container-subscription {
+
+.subscription {
     width: 570px;
     display: flex;
     flex-wrap: wrap;
-    align-self: baseline;
-    margin-left: 93px;
-    padding-top: 12px;
+    &__title {
+            margin-bottom: 20px;
+            color: $white-color;
+            font-size: 14px;
+            line-height: 1.14;
+        }
 }
 
-.subscription-title {
-    margin-bottom: 20px;
-    color: $white-color;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.subscription {
+.subscription__box {
     display: flex;
     justify-content: center;
     gap: 12px;
 }
 
-
-
-.footer-input {
+.subscription__input {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,22 +107,20 @@
     font-size: 16px;
     cursor: pointer;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    &:focus {
+            border-color: $accent-color;
+        }
+
 }
 
-.footer-input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-input:focus {
-    border-color: $accent-color;
-}
-
-
-.subscription-button {
+.subscription__button {
     display: flex;
     align-items: center;
     width: 200px;
@@ -160,7 +138,7 @@
     cursor: pointer;
 }
 
-.icon-send {
+.subscription__icon {
     margin-left: 10px;
     fill: $white-color;
 }
