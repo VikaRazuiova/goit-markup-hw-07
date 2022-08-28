@@ -126,17 +126,12 @@ input {
   transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close {
+.modal__icon-close {
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-modal-close:hover .modal-close,
-.button-modal-close:focus .modal-close {
-  fill: #2196F3;
-}
-
-.button-modal-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -150,15 +145,18 @@ input {
   justify-content: center;
   cursor: pointer;
 }
+.modal__button-close:hover .modal__icon-close, .modal__button-close:focus .modal__icon-close {
+  fill: #2196F3;
+}
 
-.modal-title {
+.modal__title {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
 }
 
-.modal-input {
+.modal__input {
   width: 100%;
   height: 40px;
   outline: none;
@@ -169,15 +167,14 @@ input {
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus {
+.modal__input:focus {
   border-color: #2196F3;
 }
-
-.modal-input:focus + .imput-icon {
+.modal__input:focus:focus + .modal__icon {
   fill: #2196F3;
 }
 
-.modal-label {
+.modal__label {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -187,20 +184,21 @@ input {
   color: #757575;
 }
 
-.imput-wrap {
+.input__wrap {
   position: relative;
   margin-bottom: 10px;
 }
 
-.imput-icon {
+.modal__icon {
   position: absolute;
+  display: inline-block;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.online-comment {
+.modal__comment {
   width: 100%;
   min-height: 120px;
   resize: none;
@@ -215,8 +213,7 @@ input {
   letter-spacing: 0.01em;
   color: #757575;
 }
-
-.online-comment::placeholder {
+.modal__comment::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -225,11 +222,11 @@ input {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.online-comment:focus {
+.modal__comment:focus {
   border-color: #2196F3;
 }
 
-.check-text {
+.modal__label--check {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -237,7 +234,7 @@ input {
   cursor: pointer;
 }
 
-.check-text span {
+.modal__label--check span {
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -247,17 +244,12 @@ input {
   margin-right: 7px;
 }
 
-.input-icon {
-  fill: transparent;
-  display: inline-block;
-}
-
-.modal-field-check {
+.modal__field--check {
   text-align: center;
   margin-top: 20px;
 }
 
-.check-box {
+.modal__check--box {
   display: inline-flex;
   width: 16px;
   height: 15px;
@@ -266,17 +258,17 @@ input {
   background-position: center;
 }
 
-.modal-check:checked + .check-text span {
+.modal__check:checked + .modal__label--check span {
   background-color: #2196F3;
   border-color: #2196F3;
   fill: #FFFFFF;
 }
 
-.modal-check:checked + .check-text span .input-icon {
+.modal__check:checked + .modal__label--check span .input-icon {
   fill: #FFFFFF;
 }
 
-.modal-button {
+.modal__button {
   width: 200px;
   height: 50px;
   color: #FFFFFF;
@@ -294,11 +286,11 @@ input {
   border-radius: 4px;
 }
 
-.modal-field-btn {
+.modal__field--button {
   text-align: center;
 }
 
-.modal-terms {
+.modal__terms {
   color: #2196F3;
 }
 
@@ -385,6 +377,13 @@ input {
   fill: #2196F3;
 }
 
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero {
   background-color: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpeg);
@@ -395,14 +394,7 @@ input {
   display: flex;
 }
 
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
+.hero__title {
   text-align: center;
   margin-bottom: 30px;
   max-width: 696px;
@@ -414,7 +406,7 @@ input {
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   padding: 10px 32px;
   border: 0;
   border-radius: 4px;
@@ -427,7 +419,7 @@ input {
   cursor: pointer;
   transition-property: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
