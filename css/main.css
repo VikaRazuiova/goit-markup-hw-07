@@ -86,11 +86,12 @@ input {
   line-height: 1.2;
   color: #2196F3;
 }
-.logo-black {
+.logo span {
   color: #000000;
 }
-.logo-white {
-  color: #FFFFFF;
+
+.logo--color span {
+  color: #ffffff;
 }
 
 .backdrop {
@@ -294,6 +295,14 @@ input {
   color: #2196F3;
 }
 
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  font-weight: 700;
+}
+
 .page-header {
   font-weight: 500;
   line-height: 1.14;
@@ -468,13 +477,6 @@ input {
   position: relative;
 }
 
-.work__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
 .work__text {
   position: absolute;
   bottom: 0;
@@ -504,14 +506,6 @@ input {
   padding-bottom: 30px;
 }
 
-.team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  font-weight: 700;
-}
-
 .team__name {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -536,13 +530,6 @@ input {
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
   fill: #FFFFFF;
-}
-
-.custumers__title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
 }
 
 .customers__link {
@@ -639,7 +626,7 @@ input {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.join .social__icon {
+.join .social__icon--white {
   fill: #FFFFFF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
